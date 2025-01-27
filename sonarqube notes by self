@@ -1,12 +1,15 @@
 1.setup external first.
-SonarQube Configuration in Jenkins:
+Go to Jenkins > Manage Jenkins >  plugins > avilabel plugins.
+SonarQube_scanner Plugin installed:
+
+2.SonarQube Configuration in Jenkins:
 Go to Jenkins > Manage Jenkins > Configure System.
 Scroll to the SonarQube Servers section and add your SonarQube server details. Name it (e.g., "SonarQube").
 Environment Variables:
-Replace <your-sonarqube-server-ip> 
+Name <your-sonarqube-server-name>
+Server URL <your-sonarqube-server-ip> 
 =======================================================================================
                                                      #Replace <your-sonarqube-token> with the token generated from your SonarQube dashboard.
-                                                     #SonarQube Plugin:
                                                      #Ensure that the SonarScanner for Jenkins plugin is installed on your Jenkins instance.
                                                      #Maven Configuration:
                                                      #Ensure the sonar-maven-plugin is included in your Maven pom.xml or your Maven version supports SonarQube.
